@@ -1,0 +1,31 @@
+{
+  "name": "meu_projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "axios": "^0.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "gulp-sass": "^4.1.0",
+    "knex": "^0.21.5",
+    "package": "^1.0.1",
+    "sqlite3": "^5.0.0",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.54",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7"
+  },
+  "scripts": {
+    "server": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "serv": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "knex:seed": "knex --knexfile knexfile.ts seed:run"
+  },
+  "author": "",
+  "license": "ISC"
+}
